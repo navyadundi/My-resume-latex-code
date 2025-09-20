@@ -1,0 +1,279 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Navya}{Dundi}{ \urlstyle{same}\\
+\href{mailto:navyad@gmail.com}{navyad@gmail.com}\\ \href{mailto:0000000@svecw.edu.in}{000000@svecw.edu.in} |  
+\href{tel:+911234567890}{+91 1234567890    } 
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Shri Vishnu Engineering}
+\subsection{College for Women}
+\descript{Btech in Computer Science}
+\location{CGPA : 8.9 \\2022 - ongoing | Bhimavaram, Andhra Pradesh, India}
+\sectionsep
+
+\subsection{ABCDE college}
+\descript{MPC |  percentage : 82.8\%}
+\textbf{BIEAP}\\
+\location{2020 - 2022 | XYZ, Andhra Pradesh, India}
+
+
+\sectionsep
+
+\subsection{ADC High School}
+\descript{percentage : 96.6\%}
+\textbf{BSEAP}\\
+\location{May 2020|  xyz, Andhra Pradesh, India}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Leetcode://
+\href{https://leetcode.com/navyadundi/}{\bf navyadundi}\\
+GitHub://
+\href{https://github.com/navyadundi}{\bf navyadundi}\\
+Smart Interviews:// \href{https://smartinterviews.in/profile/navyadundi}{\bf navyadundi} \\
+Codechef://  \href{https://www.codechef.com/users/navyadundi}{\bf navyadundi} \\
+Hacker Rank://
+\href{https://www.hackerrank.com/profile/navyadundi}{\bf navyadundi}\\
+LinkedIn://  \href{https://www.linkedin.com/in/navyadundi/}{\bf navyadundi} \\
+
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+
+\sectionsep
+\subsection{Programming Languages}
+
+\textbullet{Java} \\
+\textbullet{Basics in C}
+
+
+ \subsection{Technologies}
+\textbullet{HTML}\\
+\textbullet{CSS}\\
+\textbullet{React.js}\\
+\textbullet{SQL}\\
+\textbullet{Database Management System}\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Soft Skills}
+
+\textbullet{Communication Skills}\\
+\textbullet{Team Management}\\
+\textbullet{Self-Motivated\\}
+\textbullet{Adaptable}
+
+
+\section{PERSONAL INTERESTS}
+
+\textbullet{Photo Editing}\\
+\textbullet{Video Editing}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\section{project}
+\runsubsection{full-stack eCommerce website using the MERN Stack}\\
+\location{}
+\begin{tightemize}
+
+\item Utilized React.js to create an interactive and responsive user interface, ensuring a seamless user experience.\\
+\item For the backend we want to develop a scalable backend infrastructure using Express.js and Node.js.\\
+\item Incorporating MongoDB as the database solution for efficient data storage and retrieval.
+
+\descript{Technologies used:}
+\textbullet{Front-end: React.js\\
+\textbullet{Back-end: Node.js, Express.js}\\
+\textbullet{Database: MongoDB}
+}
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{TaskTide – Productive Tools Application  | }\href{https://}{Link}
+\location{}
+\begin{tightemize}
+
+\item Developed a comprehensive productivity application designed to enhance user's time and task management effectively. \\
+\item TaskTide combines essential productivity tools, including a To-Do List, Notes,
+Timer, and Event Calendar, into a single comprehensive platform.
+\item The application offers an intuitive user interface and ensures seamless user experience through responsive design and robust functionality.
+\descript{Technologies used:}
+\textbullet{Front-end: HTML, CSS, JavaScript, Bootstrap\\
+\textbullet{Database: Firebase Realtime Database}\\
+\textbullet{Version Control: Git and GitHub}\\
+
+}
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sectionsep
+\section{Co-Curricular Activites}
+
+\runsubsection{Coding Contest ||}\href{}{Link}
+\descript{ TOP-50 CODERS- CODING EXTRAVAGANZA \location{December-2022}}
+
+
+\begin{tightemize}
+\item Participated in College Level Contest Coding Extravaganza. I listed in the \textbf{TOP 50 Coders }solving problems using C programming language.
+\end{tightemize}
+
+
+\runsubsection{Technical Poster Presentation}
+
+\descript{ Poster Design \& Presentation Winners 
+\location{April 2023}}
+
+\begin{tightemize}
+\runsubsection{}
+\item I led a team of two enthusiasts. Our collective effort centered on the theme of Nanotechnology, showcasing innovative concepts and advancements in the field.
+\item Our team's presentation garnered significant recognition, culminating in us securing the \textbf{FIRST} place in the competition.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Group Discussion}
+
+\descript{  Tech League \location{May 2023}}
+
+\begin{tightemize}
+\runsubsection{}
+\item I participated in the event Tech League (Group discussion) which is conducted College level among the 40-50 participants.
+\item I got \textbf{Second place} in the event Tech League.
+\end{tightemize}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\section{Certifications} 
+\subsection{}
+
+\begin{tightemize}
+
+\item Database Programming with SQL \textbf{-ORACLE} \href{}{Link}\location{2024}
+\item Google AI for Anyone 
+ (EDX) \textbf{-GOOGLE}\location{June 2024}
+ 
+ 
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
